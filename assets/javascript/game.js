@@ -25,8 +25,20 @@ document.onkeyup = function(event) {
         // Replace the appropriate underscore in currentWordText with userGuess
         // Find index of userGuess in randomWord
         // Replace that index in currentWordText with userGuess
-        var letterIndex = randomWord.indexOf(userGuess);
-        currentWordText.textContent = currentWordText.textContent.replace(currentWordText.textContent.charAt(letterIndex), userGuess);
+        var indexArray = [];
+
+        // Loop through each letter in randomWord
+        // Check if userGuess is the same character as letter in randomWord
+        // If same, add index of letter to indexArray
+        for (var i=0; i < randomWord.length; i++) {
+            if (randomWord.charAt(i) === userGuess) {
+                indexArray.push(randomWord.indexOf(i));
+            }
+        }
+        console.log(indexArray);
+
+        // var letterIndex = randomWord.indexOf(userGuess);
+        // currentWordText.textContent = currentWordText.textContent.replace(currentWordText.textContent.charAt(letterIndex), userGuess);
 
         guessesText.textContent += userGuess;
     }
