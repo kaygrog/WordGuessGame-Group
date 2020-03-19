@@ -1,0 +1,14 @@
+1. Create array with all words to guess
+2. Create function to randomly generate word from array and display to user
+3. Display same amount of underscores as the length of the word
+4. Create box containing all user's guessed letters
+5. Create scoreboard for wins
+6. Create counter for number of guesses remaining
+7. When user presses a key:
+    - if guess was incorrect, display letter in guessed letter box
+    - decrement # of guesses remaining
+    - if letter is correct, replace appropriate underscore with letter
+8. Prevent user from guessing the same letter (if statement?)
+9. Create function to restart game and randomly generate another word
+10. If user wins, increment Wins counter
+11. Choose and implement a theme using CSS
